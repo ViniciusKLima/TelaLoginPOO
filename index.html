@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="../img/folha.png" sizes="16x16">
+</head>
+<body>
+
+  <img class="lendo" src="img/lendo.png">
+  <img class="capa" src="img/capa (2).png">
+
+  <div class="texto">
+    <h1>Bem-vindo à</h1>
+    <h1>Biblioteca Vitural</h1>
+    <hr class="linha">
+  </div>
+
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Entrar</button>
+      <button id="btnSignup">Cadastrar</button>
+    </div>
+
+    <form id="signin" method="get" onsubmit="return fazerLogin(event)">
+      <div class="nome1">
+        <label for="nome">Nome de Usuário</label>
+        <input type="text" id="nome" required />
+      </div>
+      <div class="senha1">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required />
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <form id="signup" onsubmit="return cadastrarUsuario(event)">
+      <div class="nome1">
+        <label for="nome">Nome de Usuário</label>
+        <input type="text" id="nome" required />
+      </div>
+      <div class="senha1">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" required />
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+  <div id="notification" class="notification">Usuário Cadastrado com Sucesso!</div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

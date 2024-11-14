@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
+  overflow: hidden;
+}
+
+.lendo{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  z-index: -9;
+  filter: blur(1px);
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.capa{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.texto{
+  font-family: Poppins;
+  position: relative;
+  color: white;
+  z-index: 1;
+  font-size: 35px;
+  top: -30px;
+  left: 15%;
+}
+
+.linha{
+  border: 1px solid white;
+  color: white;
+}
+
+.container {
+  background: white;
+  padding: 6px;
+  width: 350px;
+  transform: scale(1.1);
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  font-family: 'poppins', sans-serif;
+  z-index: 1;
+  right: 140px;
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonsForm {
+  display: flex;
+  margin-top: 40px;
+  width: 214px;
+  height: 50px;
+  position: relative;
+  border-radius: 18px;
+  box-shadow: 0 0 7px 0 #ffffff;
+  background-color: #ccc;
+  font-family: 'poppins', sans-serif;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btnSignin{
+  left: 6px;
+  font-family: 'poppins', sans-serif;
+}
+
+#btnSignup{
+  position: relative;
+  left: 10px;
+  font-family: 'poppins', sans-serif;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 25px;
+  color: white;
+}
+
+.btnColor {
+  position: absolute;
+  width: 104px;
+  height: 100%;
+  background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
+  color: white;
+  border-radius: 17px;
+  transition: .3s;
+}
+
+input{
+  border: 1px solid #a79a80;
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 7px;
+  outline: none;
+  height: 50px;
+  width: 260px;
+  font-family: 'poppins', sans-serif;
+  caret-color: #307ce1;
+}
+
+input:hover, input:focus, input:valid{
+  border-color: #307ce1;
+}
+
+button[type="submit"], button[type="button"] {
+  background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 260px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-top: 65px;
+  cursor: pointer;
+  font-family: 'poppins', sans-serif;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+label{
+  position: absolute;
+  transform: translateY(55%);
+  left: 10px; 
+  color: #7e7e7e;
+}
+
+.nome1, .senha1{
+  transform: translateY(30%);
+}
+
+.notification{
+  font-family: poppins;
+  right: 161px;
+  position: absolute;
+  top: 123px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: top 0.5s ease;
+}
+
+.notification.show{
+  top: 50px;
+}
