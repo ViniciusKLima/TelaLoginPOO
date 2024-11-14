@@ -1,1 +1,41 @@
-Seja bem-vindo
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site com Botões</title>
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+
+    
+    <main>
+        <div class="logo">
+            <h1>Biblioteca Virtual</h1>
+        </div>
+        <div class="nav">
+            <button onclick="mostrarConteudo('inicio')">Início</button>
+            <button onclick="mostrarConteudo('meusLivros')">Meus Livros</button>
+            <button onclick="mostrarConteudo('sair')">Sair</button>
+        </div>
+    </main>
+
+    
+    <aside>
+        <div id="inicio" class="conteudo">
+            <h1>Bem-vindo ao meu site!</h1>
+            <p>Aqui você encontrará várias informações sobre mim e meus livros.</p>
+        </div>
+        <div id="meusLivros" class="conteudo" style="display:none;">
+            <h1>Meus Livros</h1>
+            <p>Conheça os livros que eu escrevi.</p>
+        </div>
+        <div id="sair" class="conteudo" style="display:none;">
+            <h1>Deseja sair do site?</h1>
+            <p>Conheça os livros que eu escrevi.</p>
+        </div>
+    </aside>
+
+    <script src="js/principal.js"></script>
+</body>
+</html>
