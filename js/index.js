@@ -49,6 +49,6 @@ function fazerLogin(event) {
       window.location.href = "pagina-ADM/index.html";
   } else {
       // Redireciona para o site normal
-      window.location.href = "principal/principal.html";
+      window.location.href = "principal/index.html";
   }
 }
