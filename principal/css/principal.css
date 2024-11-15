@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
 *{
     margin: 0;
     padding:0;
@@ -7,12 +10,17 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: poppins;
 }
 
 main{
     background-color: white;
     height: 100vh;
     width: 23vw;
+    overflow: hidden;
 }
 
 .logo{
@@ -40,25 +48,114 @@ main{
     position: relative;
     cursor: pointer;
     text-align: start;
-    font-size: 16px;
+    font-size: 20px;
     background-color: white;
     border-left: 7px solid white;
     transition: transform 0.3s ease;
 }
 
-.nav button:hover {
+.nav button:hover, .nav button:focus {
     color: #307ce1;
     border-color: #307ce1;
 }
 
 .conteudo {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
+    margin: 10px;
     border-radius: 5px;
+    height: 100%;
 }
 
 aside{
     background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
     width: 77vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.titulo{
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.incio{
+    display: flex;
+    flex-direction: column;
+}
+
+.livros{
+    color: white;
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+
+    img{
+        background-color: white;
+        width: 200px;
+        height: 270px;
+    }
+
+    h4{
+        font-family: arial;
+    }
+
+    p{
+        font-size: 10px;
+    }
+}
+
+.fila1, .fila2, .fila3{
+    display: flex;
+}
+
+.sair{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 40px;
+    top: 23%;
+    color: #777;
+    box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.33);
+
+    button{
+        position: relative;
+        width: 100px;
+        height: 50px;
+        border: 0;
+        border-radius: 13px;
+        color: white;
+        background-color: #307ce1;
+        top: 40px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: #1462c9;
+    }
+
+    .sim{
+        background-color: red;
+    }
+
+    .sim:hover{
+        background-color: rgb(210, 2, 2);
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+
 }
