@@ -40,8 +40,15 @@ function fazerLogin(event) {
   const nome = document.getElementById("nome").value;
   const senha = document.getElementById("senha").value;
 
-  if (nome && senha) {
-      // Credenciais corretas, redireciona para a página restrita
-      window.location.href = "principal/principal.html"; // Caminho para a página restrita
+  // Defina as credenciais do administrador
+  const adminNome = "admin";
+  const adminSenha = "admin123";
+
+  if (nome === adminNome && senha === adminSenha) {
+      // Redireciona para o site do administrador
+      window.location.href = "pagina-ADM/index.html";
+  } else {
+      // Redireciona para o site normal
+      window.location.href = "principal/principal.html";
   }
 }
