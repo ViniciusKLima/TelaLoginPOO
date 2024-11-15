@@ -29,7 +29,7 @@ nav{
     height: 8vh;
 }
 
-nav button{
+nav button, .sair{
     background: none;
     border: 2px solid white;
     color: white;
@@ -41,7 +41,17 @@ nav button{
     transition: transform 0.3s ease;
 }
 
-nav button:hover{
+.sair{
+    position: relative;
+    left: 470px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav button:hover, .sair:hover{
     transform: scale(1.1);
     color: rgb(255, 170, 0);
     border-color: rgb(255, 178, 0);
@@ -115,4 +125,36 @@ form button{
     height: 35px;
     width: 100px;
     border-radius: 10px;
+}
+
+#livroImage{
+    cursor: pointer;
+}
+
+.input-img{
+    display: flex;
+    width: 250px;
+    position: relative;
+    left: -8px;
+
+    label{
+        position: relative;
+        left: 10px;
+        top: 9px;
+    }
+}
+
+.b-add{
+    background-color: rgb(12, 153, 12);
+    color: white;
+}
+
+.b-alt{
+    background-color: rgb(228, 194, 0);
+    color: white;
+}
+
+.b-remove{
+    background-color: red;
+    color: white;
 }
