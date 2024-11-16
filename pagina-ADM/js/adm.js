@@ -12,14 +12,15 @@ function mostrarConteudo(secao) {
 
 //-----------------------//
 
-function salvar() { 
+function adicionar() { 
     var json, pessoa,                      // Variáveis para armazenar o JSON enviado e o objeto retornado.
         data = {},                         // Objeto para armazenar os dados digitados no formulário.
         request = new XMLHttpRequest(),    // Cria uma instância do objeto XMLHttpRequest para enviar a requisição.
         url = "http://localhost:8080/api/v1/pessoa"; // Define a URL do endpoint da API.
 
-    data.nome = document.getElementById('inputNome').value; // Captura o valor do campo "Nome" do formulário.
-    data.idade = document.getElementById('inputIdade').value; // Captura o valor do campo "Idade" do formulário.
+    livro.imagem = document.getElementById('livroImagem').value; //Captura o URL do campo "Imagem".
+    livro.nome = document.getElementById('livroNome').value; // Captura o valor do campo "Nome" do formulário.
+    livro.autor = document.getElementById('livroAutor').value; // Captura o valor do campo "Autor" do formulário.
 
     json = JSON.stringify(data); // Converte o objeto `data` para uma string no formato JSON.
 
@@ -50,9 +51,10 @@ function alterar() {
         url = "http://localhost:8080/api/v1/pessoa", // Define a URL do endpoint da API.
         request = new XMLHttpRequest();    // Cria uma instância do objeto XMLHttpRequest para enviar a requisição.
 
-    data.id = document.getElementById('inputID').value; // Captura o valor do campo "ID" do formulário.
-    data.nome = document.getElementById('inputNome').value; // Captura o valor do campo "Nome" do formulário.
-    data.nome = document.getElementById('inputIdade').value; // Captura o valor do campo "Idade" do formulário.
+    livro.imagem = document.getElementById('livroImagem').value; //Captura o URL do campo "Imagem".
+    livro.id = document.getElementById('livroId').value; // Captura o valor do campo "ID" do formulário.
+    livro.nome = document.getElementById('livroNome').value; // Captura o valor do campo "Nome" do formulário.
+    livro.autor = document.getElementById('livroAutor').value; // Captura o valor do campo "Idade" do formulário.
 
     json = JSON.stringify(data); // Converte o objeto `data` para uma string no formato JSON.
 
@@ -78,9 +80,10 @@ function excluir() {
         request = new XMLHttpRequest(),    // Cria uma instância do objeto XMLHttpRequest para enviar a requisição.
         url = "http://localhost:8080/api/v1/pessoa"; // Define a URL do endpoint da API.
 
-    data.id = document.getElementById('inputID').value; // Captura o valor do campo "ID" do formulário.
+    livro.id = document.getElementById('inputID').value; // Captura o valor do campo "ID" do formulário.
+    livro.nome = document.getElementById('livroNome').value; // Captura o valor do campo "Nome" do formulário.
 
-    request.open("DELETE", url + '/' + data.id, true); // Configura a requisição HTTP com método DELETE e URL com ID.
+    request.open("DELETE", url + '/' + livro.id, true); // Configura a requisição HTTP com método DELETE e URL com ID.
 
     request.onload = function () { // Define o comportamento quando a resposta for recebida.
         pessoa = JSON.parse(request.responseText); // Converte a resposta da API de JSON para um objeto.
@@ -132,7 +135,7 @@ function listar() {
     request.send(); // Envia a requisição (sem corpo).
 }
 
-function buscar() { 
+/*function buscar() { 
     var resp,                              // Variável para armazenar a resposta.
         txt = "",                          // Variável para construir o conteúdo HTML da tabela.
         data = {},                         // Objeto para armazenar os dados digitados no formulário.
@@ -168,4 +171,4 @@ function buscar() {
     };
 
     request.send(); // Envia a requisição (sem corpo).
-}
+}*/
