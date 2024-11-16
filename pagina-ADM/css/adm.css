@@ -95,6 +95,7 @@ form{
     position: relative;
     left: 40%;
     border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .titulo{
@@ -127,34 +128,32 @@ form button{
     border-radius: 10px;
 }
 
-#livroImage{
-    cursor: pointer;
-}
-
-.input-img{
-    display: flex;
-    width: 250px;
-    position: relative;
-    left: -8px;
-
-    label{
-        position: relative;
-        left: 10px;
-        top: 9px;
-    }
-}
-
-.b-add{
+.b-adicionar{
     background-color: rgb(12, 153, 12);
     color: white;
 }
 
-.b-alt{
+.b-alterar{
     background-color: rgb(228, 194, 0);
     color: white;
 }
 
-.b-remove{
+.b-remover{
     background-color: red;
     color: white;
+}
+
+.b-adicionar:hover{
+    background-color: rgb(9, 128, 9);
+    cursor: pointer;
+}
+
+.b-alterar:hover{
+    background-color: rgb(195, 167, 7);
+    cursor: pointer;
+}
+
+.b-remover:hover{
+    background-color: rgb(186, 12, 12);
+    cursor: pointer;
 }

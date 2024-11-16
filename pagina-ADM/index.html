@@ -30,8 +30,8 @@
 
             <form id="adicionarLivro" action="" enctype="multipart/form-data">
                 <div class="input-img">
-                    <label for="livroImage">Imagem:</label>
-                    <input type="file" id="livroImage" accept="image/*">
+                    <label for="livroImage">URL da Imagem:</label>
+                    <input type="text" id="livroImage">
                 </div>
                 <div>
                     <label for="livroNome">Nome do livro:</label>
@@ -42,7 +42,7 @@
                     <input type="text" id="livroAutor" required>
                 </div>
                 <div>
-                    <button class="b-add" type="submit">Adicionar</button>
+                    <button class="b-adicionar" type="button" onclick="adicionar();">Adicionar</button>
                 </div>
             </form>
         </div>
@@ -53,8 +53,8 @@
 
             <form id="alterarLivro" action="" enctype="multipart/form-data">
                 <div class="input-img">
-                    <label for="livroImage">Selecionar Imagem:</label>
-                    <input type="file" id="livroImage" accept="image/*">
+                    <label for="livroImage">URL da Imagem:</label>
+                    <input type="text" id="livroImage">
                 </div>
                 <div>
                     <label for="livroId">ID do Livro:</label>
@@ -69,7 +69,7 @@
                     <input type="text" id="livroAutor" required>
                 </div>
                 <div>
-                    <button class="b-alt" type="submit">Alterar</button>
+                    <button class="b-alterar" type="button" onclick="alterar();">Alterar</button>
                 </div>
             </form>
         </div>
@@ -88,7 +88,7 @@
                     <input type="text" id="livroNome" required>
                 </div>
                 <div>
-                    <button class="b-remove" type="submit">Remover</button>
+                    <button type="button" class="b-remover" onclick="remover();">Remover</button>
                 </div>
             </form>
         </div>
