@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/capa (2).png");
+    background-size: cover;
+    background-color: #0449a2;;
+    color: white;
+    font-family: arial;
+    
+}
+
+.texto{
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px white solid;
+    height: auto;
+    padding-bottom: 5px;
+    text-align: start;
+    font-size: 25px;
+}
+
+aside{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+}
+
+.titulo{
+    color: #307ce1;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+}
+
+.container{
+    display: flex; 
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+    color: #787878;
+}
+
+.container div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+input{
+    padding-left: 10px;
+    height: 35px;
+    border: 1px #787878 solid;
+    border-radius: 5px;
+}
+
+input:hover, input:focus, input:valid{
+    outline: none;
+    border-color: #307ce1;
+}
+
+button{
+    margin-top: 15px;
+    height: 35px;
+    background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.entrar{
+    text-align: center;
+}

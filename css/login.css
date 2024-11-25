@@ -37,37 +37,36 @@ body {
   opacity: 0.7;
 }
 
+aside{
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .texto{
   font-family: Poppins;
-  position: relative;
   color: white;
   z-index: 1;
   font-size: 35px;
-  top: -30px;
-  left: 15%;
-}
-
-.linha{
-  border: 1px solid white;
-  color: white;
 }
 
 .container {
   background: white;
   padding: 6px;
   width: 350px;
-  transform: scale(1.1);
+  transform: scale(1);
   height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   font-family: 'poppins', sans-serif;
   z-index: 1;
-  right: 140px;
 }
 
 form {
@@ -82,47 +81,13 @@ form {
   align-items: center;
 }
 
-.buttonsForm {
+.titulo{
+  height: 30%;
   display: flex;
-  margin-top: 40px;
-  width: 214px;
-  height: 50px;
-  position: relative;
-  border-radius: 18px;
-  box-shadow: 0 0 7px 0 #ffffff;
-  background-color: #ccc;
-  font-family: 'poppins', sans-serif;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-#btnSignin{
-  left: 6px;
-  font-family: 'poppins', sans-serif;
-}
-
-#btnSignup{
-  position: relative;
-  left: 10px;
-  font-family: 'poppins', sans-serif;
-}
-
-.buttonsForm button {
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  position: relative;
-  padding: 10px 25px;
-  color: white;
-}
-
-.btnColor {
-  position: absolute;
-  width: 104px;
-  height: 100%;
-  background: linear-gradient(to right, #53bcff, #307ce1, #396fe6);
-  color: white;
-  border-radius: 17px;
-  transition: .3s;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color:#307ce1;
 }
 
 input{
@@ -178,19 +143,14 @@ label{
   transform: translateY(30%);
 }
 
-.notification{
-  font-family: poppins;
-  right: 161px;
-  position: absolute;
-  top: 123px;
-  background-color: white;
-  color: black;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 16px;
-  transition: top 0.5s ease;
-}
-
-.notification.show{
-  top: 50px;
+.cadastre{
+  color: #7e7e7e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 10%;
+  
+  a{
+    text-decoration: none;
+  }
 }
